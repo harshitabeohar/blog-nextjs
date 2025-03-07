@@ -1,10 +1,13 @@
+import { notFound } from 'next/navigation';
 import { posts } from '@/app/lib/placeholder-data';
 import Post from '@/app/ui/components/posts/Post';
 
-export type Params = Promise<{ id: string[] }>;
-export default async function Page({ params }: { params: Params }) {
-  const postId = (await params).id[0];
-  const post = posts.find((post) => post.id === postId);
+export default async function Page({ params }: { params: { id: string } }) {
+  const post = posts.find((post) => post.id === params.id);
+if (!post) {
+    return notFound();
+  }
+
   return (
     <>
       <h1>Post</h1>
