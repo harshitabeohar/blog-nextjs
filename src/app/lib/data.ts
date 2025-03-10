@@ -3,7 +3,7 @@ import { neon } from '@neondatabase/serverless';
 import { unstable_noStore as noStore } from 'next/cache';
 
 export async function connectToDB() {
-    const client = await createClient();
+    const client = createClient();
     await client.connect();
 
     try{
