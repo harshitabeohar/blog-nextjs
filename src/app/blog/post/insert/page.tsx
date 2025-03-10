@@ -79,7 +79,7 @@ export default function Page() {
         router.push('/blog/posts');
       }
     })
-  }, []);
+  }, [router]);
 
   return (
     <div className="bg-white p-8 rounded shadow">
