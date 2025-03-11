@@ -1,7 +1,7 @@
 // import { sql } from '@vercel/postgres';
 import { neon } from '@neondatabase/serverless';
 import { NextResponse } from 'next/server';
-import { auth } from "../../../../auth.config"
+// import { auth } from "../../../../auth.config"
 
 if (!process.env.DATABASE_URL) {
   throw new Error('DATABASE_URL is not defined');
@@ -19,7 +19,7 @@ export async function GET() {
 }
 
 export async function POST(request: Request) {
-  const session = await auth();
+  // const session = await auth();
   const { searchParams } = new URL(request.url);
   const id = searchParams.get('id');
   const title = searchParams.get('title');
@@ -29,9 +29,9 @@ export async function POST(request: Request) {
 
 
   try {
-    if (!session) {
-      return NextResponse.json({ message: 'user not authenticated' }, { status: 401 });
-    }
+    // if (!session) {
+    //   return NextResponse.json({ message: 'user not authenticated' }, { status: 401 });
+    // }
     // SQL query to insert a new post
     await sql`INSERT INTO posts (id, author, title, content, date) VALUES (${id}, ${author}, ${title}, ${content}, ${date});`;
     return NextResponse.json({ message: 'Post successfully inserted' }, { status: 200 });
