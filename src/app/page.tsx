@@ -9,14 +9,15 @@ export default function Home() {
           <div className="flex flex-col justify-center">
             <h1 className={`text-4xlfont-bold mb-4 ${styles.text_green}`}>Welcome to the Blog</h1>
             <p className="text-lg text-gray-700 mb-4">
-            A dynamic space where creativity meets technology! Whether you're here to read insightful blogs, share your own stories, or generate AI-powered content, this platform is designed to inspire and empower your writing journey.
+              Welcome to an innovative blog platform! Here, you can immerse yourself in a world of creativity and technology. Whether you&apos;re looking to read insightful articles, share your own stories, or leverage AI to generate content, we&apos;ve got you covered.
 
-            🚀 What You Can Do Here
-            ✅ Read & Explore - Discover engaging and thought-provoking blogs on various topics.
-            ✍️ Create & Share - Write your own blog posts and share your ideas with the world.
-            🤖 AI-Powered Content - Need inspiration? Let our AI generate creative blog content for you.
+              What You Can Do Here:
+              Read & Explore - Dive into a variety of engaging and thought-provoking blogs.
+              Create & Share - Write and publish your own blog posts to share your ideas.
+              AI-Powered Content - Get creative inspiration with AI-generated blog content.
 
-            Whether you're an experienced writer or just starting out, This platform provides the tools to bring your words to life. Start exploring, writing, and innovating today!             </p>
+              No matter your experience level, our platform provides the tools you need to bring your words to life. Start exploring, writing, and innovating today!
+            </p>
             <a href="/blog/posts" className={`outline outline-1 outline-offset-2 border-emerald-500 text-emerald-500 hover:text-white py-2 px-4 rounded hover:bg-emerald-500 md:w-auto ${styles.fit_content}`}>
               Read
             </a>
