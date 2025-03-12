@@ -10,13 +10,13 @@ export default function Home() {
             <h1 className={`text-4xlfont-bold mb-4 ${styles.text_green}`}>Welcome to the Blog</h1>
             <p className="text-lg text-gray-700 mb-4">
               Welcome to an innovative blog platform! Here, you can immerse yourself in a world of creativity and technology. Whether you&apos;re looking to read insightful articles, share your own stories, or leverage AI to generate content, we&apos;ve got you covered.
-
+{/* 
               What You Can Do Here:
               Read & Explore - Dive into a variety of engaging and thought-provoking blogs.
               Create & Share - Write and publish your own blog posts to share your ideas.
               AI-Powered Content - Get creative inspiration with AI-generated blog content.
 
-              No matter your experience level, our platform provides the tools you need to bring your words to life. Start exploring, writing, and innovating today!
+              No matter your experience level, our platform provides the tools you need to bring your words to life. Start exploring, writing, and innovating today! */}
             </p>
             <a href="/blog/posts" className={`outline outline-1 outline-offset-2 border-emerald-500 text-emerald-500 hover:text-white py-2 px-4 rounded hover:bg-emerald-500 md:w-auto ${styles.fit_content}`}>
               Read
