@@ -9,8 +9,14 @@ export default function Home() {
           <div className="flex flex-col justify-center">
             <h1 className={`text-4xlfont-bold mb-4 ${styles.text_green}`}>Welcome to the Blog</h1>
             <p className="text-lg text-gray-700 mb-4">
-              Massa urna magnis dignissim id euismod porttitor vitae etiam viverra nunc at adipiscing sit morbi aliquet mauris porttitor nisi, senectus pharetra, ac porttitor orci.
-            </p>
+            A dynamic space where creativity meets technology! Whether you're here to read insightful blogs, share your own stories, or generate AI-powered content, this platform is designed to inspire and empower your writing journey.
+
+            🚀 What You Can Do Here
+            ✅ Read & Explore - Discover engaging and thought-provoking blogs on various topics.
+            ✍️ Create & Share - Write your own blog posts and share your ideas with the world.
+            🤖 AI-Powered Content - Need inspiration? Let our AI generate creative blog content for you.
+
+            Whether you're an experienced writer or just starting out, This platform provides the tools to bring your words to life. Start exploring, writing, and innovating today!             </p>
             <a href="/blog/posts" className={`outline outline-1 outline-offset-2 border-emerald-500 text-emerald-500 hover:text-white py-2 px-4 rounded hover:bg-emerald-500 md:w-auto ${styles.fit_content}`}>
               Read
             </a>
